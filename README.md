@@ -1,6 +1,6 @@
 # fillit
-## Algorithmic project. 
-## The main goal is to create the smallest possible square from random Tetris figures
+## Algorithmic project 
+The main goal is to create the smallest possible square from random Tetris figures
 
 Each Tetris figure is named Tetriminos.
 
