@@ -3,10 +3,20 @@
 The main goal is to create the smallest possible square from random Tetris figures. <br />
 Each Tetris figure is named Tetriminos.
 
-!NOTE
-Because of 42 School norm requirements:
-* All variables are declared and aligned at the top of each function
-* Each function can't have 
+**!NOTE** <br />
+Because of 42 School norm requirements: <br />
+* All variables are declared and aligned at the top of each function <br />
+* Each function can't have more then 25 lines of code <br />
+* C++ style code commenting is forbidden <br />
+* Project should be created just with allowed functions otherwise it's cheating. <br />
+
+**General requirements from the task:** <br />
+• Your project must be written in C and must respect the Norme coding standard. <br />
+• **The allowed functions are : exit, open, close, write, read, malloc and free.** <br />
+• Your Makefile must compile your code without relinks. <br />
+• It must contain the following rules : all, clean ,fclean et re. <br />
+• You must compile your binary with the Wall, Wextra and Werror flags. Any other flag are forbidden , especially those for optimising purposes. <br />
+• The binary must be named fillit and located in the root directory of your repository. <br />
 
 ### The description of a Tetriminos must respect the following rules:
 • Precisely 4 lines of 4 characters, each followed by a new line (well... a 4x4 square). <br />
