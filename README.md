@@ -10,7 +10,7 @@ Because of 42 School norm requirements: <br />
 * C++ style code commenting is forbidden <br />
 * Project should be created just with allowed functions otherwise it's cheating. <br />
 
-**General requirements from the task:** <br />
+### General requirements from the task:
 • Your project must be written in C and must respect the Norme coding standard. <br />
 • **The allowed functions are : exit, open, close, write, read, malloc and free.** <br />
 • Your Makefile must compile your code without relinks. <br />
