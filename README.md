@@ -9,7 +9,7 @@ Each Tetris figure is named Tetriminos.
 • Each character must be either a block character(’#’ ) or an empty character (’.’). <br />
 • Each block of a Tetrimino must touch at least one other block on any of his 4 sides (up, down, left and right). <br />
 
-### A few examples of valid descriptions of Tetriminos:
+#### A few examples of valid descriptions of Tetriminos:
 
 ```
 ####      ....      .##.      ....      .#..      ....      ....      ##..      ....
@@ -18,7 +18,7 @@ Each Tetris figure is named Tetriminos.
 ....      ##..      ....      ....      ....      #...      ..#.      ....      ..##
 ```
 
-### A few examples of invalid descriptions of Tetriminos:
+#### A few examples of invalid descriptions of Tetriminos:
 
 ```
 ####      ...#      ##...     #.        ....      ..##      ####      ,,,,      .HH.
@@ -27,7 +27,7 @@ Each Tetris figure is named Tetriminos.
 ....      #...      ....                ....      ##..      ####      ,,,,      ....
 ```
 
-### Example input and expected output:
+#### Example input and expected output:
 ```
 $> cat sample.fillit | cat -e
 ...#$
@@ -78,3 +78,8 @@ HHHDDG$
 .HDD.G$
 $>
 ```
+
+#### In this project I used: 
+* reading from the standard input and from the file
+* backtracking algorithm
+* recursion
