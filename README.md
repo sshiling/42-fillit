@@ -3,6 +3,11 @@
 The main goal is to create the smallest possible square from random Tetris figures. <br />
 Each Tetris figure is named Tetriminos.
 
+!NOTE
+Because of 42 School norm requirements:
+* All variables are declared and aligned at the top of each function
+* Each function can't have 
+
 ### The description of a Tetriminos must respect the following rules:
 • Precisely 4 lines of 4 characters, each followed by a new line (well... a 4x4 square). <br />
 • A Tetrimino is a classic piece of Tetris composed of 4 blocks. <br />
