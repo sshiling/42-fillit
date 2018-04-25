@@ -80,6 +80,6 @@ $>
 ```
 
 #### In this project I used: 
-• reading from the standard input and from the file
-• backtracking algorithm
-• recursion
+• reading from the standard input and from the file <br />
+• backtracking algorithm <br />
+• recursion <br />
