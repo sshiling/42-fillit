@@ -1,7 +1,6 @@
 # fillit
 ## Algorithmic project 
-The main goal is to create the smallest possible square from random Tetris figures
-
+The main goal is to create the smallest possible square from random Tetris figures <br />
 Each Tetris figure is named Tetriminos.
 
 ### The description of a Tetriminos must respect the following rules:
@@ -17,4 +16,65 @@ Each Tetris figure is named Tetriminos.
 ....      ....      ..##      .##.      ###.      ##..      .##.      .#..      ....
 ....      ##..      ....      ##..      ....      #...      ..#.      .#..      ..##
 ....      ##..      ....      ....      ....      #...      ..#.      ....      ..##
+```
+
+### A few examples of invalid descriptions of Tetriminos:
+
+```
+####      ...#      ##...     #.        ....      ..##      ####      ,,,,      .HH.
+...#      ..#.      ##...     ##        ....      ....      ####      ####      HH..
+....      .#..      ....      #.        ....      ....      ####      ,,,,      ....
+....      #...      ....                ....      ##..      ####      ,,,,      ....
+```
+
+### Example input and expected output:
+```
+$> cat sample.fillit | cat -e
+...#$
+...#$
+...#$
+...#$
+$
+....$
+....$
+....$
+####$
+$
+.###$
+...#$
+....$
+....$
+$
+....$
+..##$
+.##.$
+....$
+$
+....$
+.##.$
+.##.$
+....$
+$
+....$
+....$
+##..$
+.##.$
+$
+##..$
+.#..$
+.#..$
+....$
+$
+....$
+###.$
+.#..$
+....$
+$> ./fillit sample.fillit | cat -e
+ABBBB.$
+ACCCEE$
+AFFCEE$
+A.FFGG$
+HHHDDG$
+.HDD.G$
+$>
 ```
