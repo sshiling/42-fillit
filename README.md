@@ -94,7 +94,7 @@ HHHDDG$
 $>
 ```
 
-#### In this project I used: 
+### In this project I used: 
 • linked lists, char arrays and double char arrays <br />
 • reading from the standard input and from the file <br />
 • backtracking algorithm <br />
