@@ -11,46 +11,46 @@
 # **************************************************************************** #
 
 NAME = fillit
+FLAGS = -Wall -Wextra -Werror
 
-SRCS =	main.c \
-		ft_checker_similar.c \
-		ft_fillit.c \
-		ft_print_step.c \
-		ft_simplify_back_count_square_in_sq.c \
-		ft_struct_creator_delete_list.c
+SRC_NAME = ft_fillit.c\
+		ft_print_step.c\
+		ft_checker_similar.c\
+		ft_simplify_back_count_square_in_sq.c\
+		ft_struct_creator_delete_list.c\
+		main.c	
 
-LIBFT = libft/
+OBJ_NAME = $(SRC_NAME:.c=.o)
+OBJ = $(addprefix $(OBJ_DIR),$(OBJ_NAME))
+INC = -Iincludes/ -I$(LIB_DIR)includes/
 
-OBJECTS = $(SRCS:.c=.o)
-
-FLAGS = -Wall -Werror -Wextra
-
-CC = gcc
+LIB_DIR = libft/
+SRC_DIR = srcs/
+OBJ_DIR = objs/
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS)
-	@echo "Creating .o files. Please wait..."
-	@make -C $(LIBFT)
-	@$(CC) $(FLAGS) -o $(NAME) $(OBJECTS) -L $(LIBFT) -lft
-	@echo "All .o files successfully created."
-	@echo "Fillit successfully created."
+$(NAME): $(OBJ)
+	make -C $(LIB_DIR) --silent
+	@echo "##### Lib created #####"
+	gcc -o $(NAME) $(OBJ) -L $(LIB_DIR) -lft
+	@echo "##### Compiling finished! #####"
 
-%.o: %.c
-	@$(CC) $(FLAGS) -c $<
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+	mkdir -p $(OBJ_DIR)
+	@echo "##### Linking" [ $@ ] " #####"
+	gcc $(FLAGS) -o $@ -c $< $(INC)
 
 clean:
-	@echo "Deleting all .o files. Please wait..."
-	@rm -f $(OBJECTS)
-	@make clean -C $(LIBFT)
-	@echo "All .o files deleted."	
+	@make -C $(LIB_DIR) clean  --silent
+	@rm -f $(OBJ)
+	@echo "##### Removed object files #####"
 
 fclean: clean
-	@echo "Deleting all .o files and fillit. Please wait..."
+	@make -C $(LIB_DIR) fclean  --silent
 	@rm -f $(NAME)
-	@make fclean -C $(LIBFT)
-	@echo "All .o files and fillit deleted."	
+	@echo "##### Removed binary files #####"
 
 re: fclean all
 
-.PHONY: re all clean fclean
+.PHONY: all clean fclean re
