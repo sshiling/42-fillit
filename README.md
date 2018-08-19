@@ -3,6 +3,8 @@
 The main goal is to create the smallest possible square from random Tetris figures. <br />
 Each Tetris figure is named Tetriminos.
 
+All functions are created in accordance with Norm - the bunch of rules how code should be formatted.
+
 **!NOTE** <br />
 Because of 42 School norm requirements: <br />
 * All variables are declared and aligned at the top of each function <br />
