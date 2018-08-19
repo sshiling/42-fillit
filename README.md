@@ -102,3 +102,5 @@ $>
 • reading from the standard input and from the file <br />
 • backtracking algorithm <br />
 • recursion <br />
+
+#### More about School 42 you can find here: https://en.wikipedia.org/wiki/42_(school)
