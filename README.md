@@ -4,7 +4,7 @@ Fillit is the second project in the study program at School 42 (UNIT Factory).<b
 The main goal is to create the smallest possible square from random Tetris figures. <br />
 Each Tetris figure is named Tetriminos.
 
-<b>All functions are created in accordance with Norm - the bunch of rules how code should be formatted.</b>
+All functions are created in accordance with Norm - the bunch of rules how code should be formatted.
 
 **!NOTE** <br />
 Because of 42 School norm requirements: <br />
