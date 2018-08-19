@@ -1,5 +1,6 @@
 # fillit
 ## Algorithmic project 
+Fillit is the second project in the study program at School 42 (UNIT Factory).
 The main goal is to create the smallest possible square from random Tetris figures. <br />
 Each Tetris figure is named Tetriminos.
 
